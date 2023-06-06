@@ -194,8 +194,8 @@
       const makeItClickable = function () {
         let h1 = document.querySelector("h1");
         let h12 = h1.textContent;
-        h12.slice(0, -1);
-        h1 = h12;
+        h12=h12.slice(0, -1);
+        h1.innerText = h12;
       };
       document.querySelector("h1").onclick = makeItClickable;
 
